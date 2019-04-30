@@ -1,7 +1,7 @@
 const Hangman = function(word, numberOfGuess){
     this.word = word.toLowerCase().split('')
     this.numberOfGuess = numberOfGuess
-    this.guessLetter = ['h']
+    this.guessLetter = []
 }
 
 Hangman.prototype.getPuzzle = function(){
@@ -32,9 +32,5 @@ Hangman.prototype.getGuess = function(guess){
 }
 
 
-const game = new Hangman('hello', 3)
-game.getGuess('h')
-game.getGuess('l')
-console.log(game.getPuzzle());
-console.log(game.numberOfGuess);
+
 
